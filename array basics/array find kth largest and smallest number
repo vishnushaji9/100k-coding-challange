@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+    
+    int arr[]={2,7,5,9,4,3,6,10};
+    int size =  sizeof(arr)/sizeof(arr[0]);
+    int i,j,temp;
+    int k = 2;
+    
+    for(i = 0; i < size -1; i++){
+        for(j = 0; j < size - i - 1; j++){
+            if(arr[j]>arr[j+1]){
+                temp = arr[j];
+                arr[j] =  arr[j+1];
+                arr[j+1] =temp;
+            }
+        }
+    }
+    int  largestelement = arr[size-k];
+    printf("elemetn %d  the largest number : %d",k,largestelement);
+    
+    int  smallestelement =  arr[k - 1];
+    printf("\nelement %d  the smalleslelement :%d ",k,smallestelement);
+
+}

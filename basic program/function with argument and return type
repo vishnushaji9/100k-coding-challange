@@ -1,0 +1,23 @@
+// function with argument and return type
+
+#include <stdio.h>
+
+int sum(int ,int);
+
+int main() {
+    
+    int a,b,c;
+    printf("enter  2 values :");
+    scanf("%d%d",&a,&b);
+    c = sum(a,b);
+    printf("%d",c);
+    return 0;
+}
+
+int sum(int num1, int num2){
+    
+    int k;
+    k = num1+num2;
+    return k;
+    
+}
